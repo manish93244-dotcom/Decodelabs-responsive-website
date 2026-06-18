@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>DecodeLabs Project 2 - Responsive Web Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__logo">
+            <strong>DecodeLabs</strong>
+        </div>
+
+        <button class="menu-toggle" popovertarget="nav-menu" aria-label="Toggle Navigation Menu">
+            <span class="menu-toggle__icon"></span>
+        </button>
+
+        <nav id="nav-menu" class="header__nav" popover aria-label="Main Navigation">
+            <button class="menu-close" popovertarget="nav-menu" popovertargetaction="hide" aria-label="Close Menu">&times;</button>
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#home" class="header__nav-link">Home</a></li>
+                <li class="header__nav-item"><a href="#about" class="header__nav-link">About</a></li>
+                <li class="header__nav-item"><a href="#services" class="header__nav-link">Services</a></li>
+                <li class="header__nav-item"><a href="#contact" class="header__nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-layout">
+        
+        <section id="home" class="hero-container">
+            <h1 class="hero-container__title">Manish Kumar</h1>
+            <p class="hero-container__text">
+                <strong>Madhav Institute of Technology and Science (MITS)</strong><br>
+                Branch: Mathematics & Computing (2025-29 Batch)
+            </p>
+            <a href="#contact" class="button button--primary">Connect with Me</a>
+        </section>
+
+        <div class="layout-wrapper">
+            
+            <section id="about" class="about-section">
+                <div class="content-grid">
+                    
+                    <article class="card">
+                        <img src="blueprint.jpg" alt="Abstract architectural framework blueprint" class="card__image" width="288" height="180">
+                        <div class="card__body">
+                            <h2 class="card__title">Major Section</h2>
+                            <p class="card__text">This block represents your primary structured informational data card within the macro layout framework.</p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="wireframe.jpg" alt="Clean visual interface layout wireframe" class="card__image" width="288" height="180">
+                        <div class="card__body">
+                            <h3 class="card__subtitle">Subsection A</h3>
+                            <p class="card__text">Using modular blocks keeps layouts highly predictable and easier to maintain long-term.</p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="code.jpg" alt="Code structure schematic illustration" class="card__image" width="288" height="180">
+                        <div class="card__body">
+                            <h3 class="card__subtitle">Subsection B</h3>
+                            <p class="card__text">Adhering strictly to BEM class rules isolates styling scopes perfectly.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <aside id="services" class="services-sidebar">
+                <div class="sidebar-block">
+                    <h2 class="sidebar-block__title">Services & Inquiry</h2>
+                    <p class="sidebar-block__text">For technical support, quantitative insights, or career-related collaborations, feel free to drop an email message directly:</p>
+                    <div class="sidebar-block__detail">
+                        <strong>Gmail ID:</strong> <a href="mailto:manish93244@gmail.com" class="sidebar-block__link">manish93244@gmail.com</a>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="footer__contact-info">
+            <h2 class="footer__title">Contact Information</h2>
+            <p class="footer__text"><strong>Phone Number:</strong> +91 6200488260</p>
+            <p class="footer__text">
+                <strong>LinkedIn Portfolio:</strong> 
+                <a href="https://www.linkedin.com/in/manish-kumar-b2aa4a375" target="_blank" rel="noopener noreferrer" class="footer__link">manish-kumar-b2aa4a375</a>
+            </p>
+            <p class="footer__meta">&copy; 2026 DecodeLabs Internal Engineering Track. All Rights Reserved. [cite: 445]</p>
+        </div>
+    </footer>
+
+</body>
+</html>
